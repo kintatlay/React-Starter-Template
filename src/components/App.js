@@ -2,13 +2,13 @@ import React from 'react';
 import './styles/style.css';
 import './styles/style.scss';
 import Image from '../test.jpg';
-import data from '../Travel_Data.csv';
+// import data from '../Travel_Data.csv';
 import { IconContext } from "react-icons";
 import { FaBeer } from 'react-icons/fa';
 
 class App extends React.Component {
     render() {
-        console.log(data);
+        // console.log(data);
         return (
             <div>
                 <p className="text-color text-center">Hello</p>
