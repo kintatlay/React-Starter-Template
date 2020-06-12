@@ -20,6 +20,22 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: {
+                    loader: 'url-loader'
+                }
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: [
+                    'csv-loader',
+                ]
+            },
+            {
+                test: /\.xml$/,
+                use: ['xml-loader']
             }
         ]
     },
